@@ -1,59 +1,67 @@
-# TicketingFrontend20
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+# Real-Time Event Ticketing System (Angular & Springboot)
 
-## Development server
+This project implements the Real-Time Event Ticketing System using advanced producer-consumer patterns. The system is designed in such a way that it can handle the concurrency of ticket releases by vendors and ticket purchases by customers while ensuring efficient resource management and concurrency control. The system uses multi-threading to simulate real-time ticket availability, ensuring the scalability and maintainability of the architecture.
 
-To start a local development server, run:
+The course work will deepen your understanding of Object-Oriented Programming (OOP), multi-threading, and concurrent systems in line with industry practices. Implementation will be done using Spring Boot for the backend and Angular for the frontend to ensure a full-stack development approach.
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Tech Stack
 
-```bash
-ng generate component component-name
-```
+**Frontnd:** Angular 18 (Standalone components)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+**Backend:** Spring Boot (Java 17)
 
-```bash
-ng generate --help
-```
+**Database:** H2
 
-## Building
+**Build Tools:** Maven
 
-To build the project run:
+**Dependencies:** 
 
-```bash
-ng build
-```
+    Spring Boot Starter Web
+    Spring Boot Starter Data JPA
+    Spring Boot DevTools
+    H2 Database
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Setup Instructions
 
-```bash
-ng test
-```
+    JDK 17+: Required for running the backend with Spring Boot.
+    Node.js: Required for building and running the Angular frontend.
+    Maven: Required for managing backend dependencies and running the Spring Boot application.
+    Database: H2 (in-memory database) is configured for development.
 
-## Running end-to-end tests
+- Setup
 
-For end-to-end (e2e) testing, run:
+    Download the ZIP file containing the project.
+        
+        Click the "Download ZIP" button to get the project.
 
-```bash
-ng e2e
-```
+    Extract the ZIP file:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+        unzip ticketing-system.zip
+        cd ticketing-system
 
-## Additional Resources
+    Build the project:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+        mvn clean install
+
+    Run the backend application:
+    
+        mvn spring-boot:run
+
+    Go to the weblink:
+
+        http://localhost:8080/
+## Features
+
+- **Multithreaded Ticket Management**: Implement producers (vendors) and consumers (customers) working concurrently.
+
+- **Concurrent Control**: Synchronizes vendors and customers to avoid race conditions and ensure the maximum utilization of resources.
+
+- **Logging and Error Handling**: Log important system events; handle errors gracefully.
+
+- **System Configuration and Control**: APIs to start, stop, and monitor the system at runtime.
