@@ -1,0 +1,43 @@
+
+<app-header></app-header>
+<main>
+  
+
+  <h1>Welcome to Ticketing Pool 2.0</h1>
+
+  <!-- Configuration Form -->
+  <div class="config">
+    <label>Total Tickets(Existing Tickets):</label>
+    <input type="number" [(ngModel)]="totalTickets" placeholder="Enter Total Tickets" />
+
+    <label>Release Rate (seconds):</label>
+    <input type="number" [(ngModel)]="releaseRate" placeholder="Enter Release Rate" />
+
+    <label>Purchase Rate (seconds):</label>
+    <input type="number" [(ngModel)]="purchaseRate" placeholder="Enter Purchase Rate" />
+
+    <label>Number of Vendors:</label>
+    <input type="number" [(ngModel)]="vendorCount" placeholder="Enter Vendor Count" />
+
+    <label>Number of Customers:</label>
+    <input type="number" [(ngModel)]="customerCount" placeholder="Enter Customer Count" />
+
+    <label>Max Capacity:</label>
+    <input type="number" [(ngModel)]="maxCapacity" placeholder="Enter Max Capacity" />
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="actions">
+    <button (click)="startSystem()">Start System</button>
+    <button (click)="getStatus()">Get Status</button>
+    <button (click)="stopSystem()">Stop System</button>
+  </div>
+
+  <!-- Log Display -->
+  <div class="logs">
+    <h3>System Logs</h3>
+    <!-- Use LogDisplayComponent to display logs -->
+    <app-log-display [logs]="logs"></app-log-display>
+  </div>
+  
+</main>

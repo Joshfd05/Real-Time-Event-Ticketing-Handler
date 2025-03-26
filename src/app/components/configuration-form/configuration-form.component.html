@@ -1,0 +1,40 @@
+<h2>Configuration Settings</h2>
+<form (ngSubmit)="onSubmit()">
+  <label for="totalTickets">Total Tickets:</label>
+  <input
+    id="totalTickets"
+    type="number"
+    [(ngModel)]="totalTickets"
+    name="totalTickets"
+    required
+  />
+
+  <label for="ticketReleaseRate">Ticket Release Rate:</label>
+  <input
+    id="ticketReleaseRate"
+    type="number"
+    [(ngModel)]="ticketReleaseRate"
+    name="ticketReleaseRate"
+    required
+  />
+
+  <label for="customerRetrievalRate">Customer Retrieval Rate:</label>
+  <input
+    id="customerRetrievalRate"
+    type="number"
+    [(ngModel)]="customerRetrievalRate"
+    name="customerRetrievalRate"
+    required
+  />
+
+  <label for="maxTicketCapacity">Max Ticket Capacity:</label>
+  <input
+    id="maxTicketCapacity"
+    type="number"
+    [(ngModel)]="maxTicketCapacity"
+    name="maxTicketCapacity"
+    required
+  />
+
+  <button type="submit">Submit</button>
+</form>

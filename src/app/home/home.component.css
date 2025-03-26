@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c2eff8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Configuration Form */
+.config {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.config label {
+  grid-column: span 2;
+  font-size: 14px;
+  color: #555;
+}
+
+.config input {
+  grid-column: span 2;
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.config input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2c81ba;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Log Display */
+.logs {
+  margin-top: 20px;
+}
+
+.logs h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #34495e;
+}
+
+app-log-display {
+  display: block;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+}

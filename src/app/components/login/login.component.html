@@ -1,0 +1,119 @@
+<!-- <app-header/>
+
+<div class="login">
+    <h2>Login Page</h2>
+
+    <div class="form">
+        <label for="username">Username:</label>
+        <input
+            id = "username"
+            placeholder = "Enter your Username.."
+            type = "text"
+            (keyup)="keyUpHandler($event, 'username')"/>
+    </div>
+
+    <div class="form">
+        <label for="password">Password:</label>
+        <input
+        id = "password"
+        placeholder = "Enter your Password.."
+        type = "password"
+        (keyup)="keyUpHandler($event, 'password')"/>
+    </div>
+
+    <div class="form role-switch">
+
+        <label for="role">Role:</label>
+
+        <div class="switch">
+        <label for="customer">Customer</label>
+            <input 
+                type="radio"
+                id="customer"
+                name="role"
+                value="customer"
+                [checked]="role === 'customer'"
+                (change)="role = 'customer'" />
+        </div>
+    </div>
+
+    <div class="switch">
+    <label for="vendor">Vendor</label>
+      <input
+        type="radio"
+        id="vendor"
+        name="role"
+        value="vendor"
+        [checked]="role === 'vendor'"
+        (change)="role = 'vendor'"/>
+    </div>
+
+    <div>
+        <button (click)="onLogin()">Login</button>
+    </div>    
+      
+</div> -->
+
+
+
+
+<app-header/>
+<div class="login">
+    <h2>Login Page</h2>
+    
+    <!-- Username Input -->
+    <div class="form">
+      <label for="username">Username:</label>
+      <input
+        id="username"
+        placeholder="Enter your username"
+        type="text"
+        #usernameInput
+        (input)="username = usernameInput.value"
+      />
+    </div>
+    
+    <!-- Password Input -->
+    <div class="form">
+      <label for="password">Password:</label>
+      <input
+        id="password"
+        placeholder="Enter your password"
+        type="password"
+        #passwordInput
+        (input)="password = passwordInput.value"
+      />
+    </div>
+    
+    <!-- Role Selection -->
+    <div class="form">
+      <label>Role:</label>
+      <div>
+        <label>
+          <input
+            type="radio"
+            name="role"
+            value="customer"
+            (change)="role = 'customer'"
+          />
+          Customer
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="role"
+            value="vendor"
+            (change)="role = 'vendor'"
+          />
+          Vendor
+        </label>
+      </div>
+    </div>
+  
+    <!-- Login Buttons -->
+  <div class="login-buttons">
+    <button (click)="onLogin()">Login</button>
+  </div>
+
+  </div>
+  

@@ -1,0 +1,14 @@
+com\example\ticketing_system\model\User.class
+com\example\ticketing_system\repository\UserRepository.class
+com\example\ticketing_system\service\TicketingService.class
+com\example\ticketing_system\TicketingSystemApplication.class
+com\example\ticketing_system\model\Ticket.class
+com\example\ticketing_system\service\AuthService.class
+com\example\ticketing_system\controller\TicketController.class
+com\example\ticketing_system\repository\TicketRepository.class
+com\example\ticketing_system\service\TicketPool.class
+com\example\ticketing_system\controller\AuthController.class
+com\example\ticketing_system\model\Vendor.class
+com\example\ticketing_system\model\User$Role.class
+com\example\ticketing_system\controller\FrontEndController.class
+com\example\ticketing_system\model\Customer.class

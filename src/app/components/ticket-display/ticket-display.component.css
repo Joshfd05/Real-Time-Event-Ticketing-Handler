@@ -1,0 +1,10 @@
+.ticket-info {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .ticket-info p {
+    font-size: 18px;
+    color: #007bff;
+  }
+  

@@ -1,0 +1,13 @@
+.logs {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  .logs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .logs li {
+    margin: 5px 0;
+  }
+  
